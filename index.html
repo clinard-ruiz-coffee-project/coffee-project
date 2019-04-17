@@ -22,9 +22,11 @@
 
     <!--Selection Results are below-->
     <div class="results col-6">
-        <table>
-            <tbody id="coffees"></tbody>
-        </table>
+        <div class="resultsRow row">
+            <table>
+                <tbody id="coffees"></tbody>
+            </table>
+        </div>
     </div>
 
     <!--Beginning of right side-->
@@ -33,42 +35,43 @@
         <!--First form-->
         <form>
             <div class="form-group">
-                <label for="roastOne">Roast</label>
-                <select class="form-control" id="roastOne">
-                    <option>Light</option>
-                    <option>Medium</option>
-                    <option>Dark</option>
+                <label for="roast-selection"><strong>Roast</strong></label>
+                <select class="form-control" id="roast-selection">
+                    <option>light</option>
+                    <option>medium</option>
+                    <option>dark</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="coffeeNameOne">Coffee Name</label>
-                <input type="email" class="form-control" id="coffeeNameOne" placeholder="Enter A Coffee">
+                <label for="coffeeNameOne"><strong>Coffee Name</strong></label>
+                <input type="text" class="form-control" id="coffeeNameOne" placeholder="Enter A Coffee">
             </div>
 
             <!--Change this Button to be full length and the different blue-->
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" id="submit" class="btn btn-primary btn-block">Submit</button>
+
             <hr id="formHr">
             <br>
 
-            <h1 id="addCoffeeH"> Add A Coffee</h1>
+            <h1 class="addCoffeeH text-center"> Add A Coffee</h1>
             <br>
 
             <!--Second Form-->
             <div class="form-group">
-                <label for="roastTwo">Roast</label>
-                <select class="form-control" id="roastTwo">
-                    <option>Light</option>
-                    <option>Medium</option>
-                    <option>Dark</option>
+                <label for="roast-selectionAdd"><strong>Roast</strong></label>
+                <select class="form-control" id="roast-selectionAdd">
+                    <option>light</option>
+                    <option>medium</option>
+                    <option>dark</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="coffeeNameTwo">Name</label>
-                <input type="email" class="form-control" id="coffeeNameTwo" placeholder="Enter A Coffee">
+                <label for="coffeeNameTwo"><strong>Coffee Name</strong></label>
+                <input type="text" class="form-control" id="coffeeNameTwo" placeholder="Enter A Coffee">
             </div>
 
             <!--Change this Button to be full length and the different blue-->
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" id="submit" class="btn btn-primary btn-block">Submit</button>
         </form>
     </div>
 </div>

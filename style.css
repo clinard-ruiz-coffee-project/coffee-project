@@ -10,11 +10,18 @@ td, th {
 
 .coffeeName{
     display: inline;
+    margin-right: 5%;
 }
 .coffeeType{
     display: inline;
+    color: lightslategray;
 }
 .topHr{
-    width: 80%;
+    width: 95%;
+}
+.coffee{
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 5%;
 }
 
