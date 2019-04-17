@@ -7,6 +7,14 @@ td, th {
     border: 1px solid black;
     padding: 5px 10px;
 }
+
+.coffeeName{
+    display: inline;
+}
+.coffeeType{
+    display: inline;
+}
 .topHr{
     width: 80%;
 }
+
