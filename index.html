@@ -36,30 +36,34 @@
         <form>
             <div class="form-group">
                 <label for="roast-selection"><strong>Roast</strong></label>
-                <select class="form-control" id="roast-selection">
+                <select class="form-control" id="roast-selection" onchange="roastSelection">
+                    <option>all</option>
                     <option>light</option>
                     <option>medium</option>
                     <option>dark</option>
                 </select>
             </div>
-            <div class="form-group">
+            <div class="md-form">
                 <label for="coffeeNameOne"><strong>Coffee Name</strong></label>
-                <input type="text" class="form-control" id="coffeeNameOne" placeholder="Enter A Coffee">
+                <input type="search" id="coffeeNameOne" class="form-control mdb-autocomplete" placeholder="Enter A Coffee">
+
+
             </div>
 
-            <!--Change this Button to be full length and the different blue-->
-            <button type="submit" id="submit" class="btn btn-primary btn-block">Submit</button>
+
+            <button type="submit" id="submit" class="btn btn-primary btn-block mt-3">Submit</button>
 
             <hr id="formHr">
             <br>
 
-            <h1 class="addCoffeeH text-center"> Add A Coffee</h1>
+            <h1 class="addCoffeeH text-center"> Add a Coffee</h1>
             <br>
 
             <!--Second Form-->
             <div class="form-group">
                 <label for="roast-selectionAdd"><strong>Roast</strong></label>
                 <select class="form-control" id="roast-selectionAdd">
+                    <option>all</option>
                     <option>light</option>
                     <option>medium</option>
                     <option>dark</option>
@@ -70,14 +74,15 @@
                 <input type="text" class="form-control" id="coffeeNameTwo" placeholder="Enter A Coffee">
             </div>
 
-            <!--Change this Button to be full length and the different blue-->
             <button type="submit" id="submit" class="btn btn-primary btn-block">Submit</button>
         </form>
     </div>
 </div>
+<div class="bottom my-5"></div>
 
 <!--Our Js below-->
 <script src="main.js"></script>
+
 <!--Bootstrap Js below-->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -88,5 +93,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
 </body>
 </html>
